@@ -8,7 +8,7 @@ export const tokenslice = createSlice({
     },
     reducers: {
         jwtToken: (state,action) => {
-            return action.payload.jwt;
+            state.jwt= action.payload;
         },
         
        
